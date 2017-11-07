@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Collector</title>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--reset.css-->
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Header-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1>Crystal Collector</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!--end of header-->
+
+        <!--second row - col 1-->
+        <div class="row">
+            <!--rules-->
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                    luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est
+                    usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+            </div>
+            <!--end of rules-->
+
+            <!--empty div-->
+            <div class="col-md-1">
+
+            </div>
+
+            <!--game-->
+            <div class="col-md-6">
+
+                <!--First row - scores-->
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <!--number to be guessed-->
+                        <div class="well">
+                            <h2>Number to be guessed: <span id="targetNumber"><strong></strong></span></h2>
+                        </div>
+                    </div>
+
+                    <!--Score-->
+                    <div class="col-md-6">
+                        <div class="well">
+                            <h2>Your score is: <span id="score"><strong></strong></span></h2>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row - scores-->
+
+                <!--Second row - crystals-->
+                <div class="row">
+
+
+                    <!--First Crystal-->
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img class="allCrystals" id="firstCrystal" src="assets/images/blueCrystal.png">
+                        </div>
+                    </div>
+
+                    <!--Second Crystal-->
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img class="allCrystals" id="secondCrystal" src="assets/images/orangeCrystal.png">
+                        </div>
+                    </div>
+
+                    <!--Third Crystal-->
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img class="allCrystals" id="thirdCrystal" src="assets/images/yellowCrystal.png">
+                        </div>
+                    </div>
+
+                    <!--Fourth Crystal-->
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img class="allCrystals" id="fourthCrystal" src="assets/images/lightOrangeCrystal.png">
+                        </div>
+                    </div>
+                </div>
+                <!--end of second row - crystals-->
+
+                <!--Third Row-->
+                <div class="row">
+
+                    <!--Empty Div-->
+                    <div class="col-md-2">
+                    </div>
+
+                    <!--number to be guessed-->
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2>Wins: <span id="wins"></span></h2>
+                        </div>
+                    </div>
+
+                    <!--Score-->
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2>Losses: <span id="losses"></span></h2>
+                        </div>
+                    </div>
+
+                    <!--Empty Div-->
+                    <div class="col-md-2">
+                    </div>
+
+                </div>
+                <!--end of third row-->
+            </div>
+            <!-- end of game col-->
+        </div>
+        <!--end second row-->
+    </div>
+    <!--end of container-->
+
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
